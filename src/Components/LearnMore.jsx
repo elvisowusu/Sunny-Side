@@ -18,7 +18,7 @@ function LearnMore() {
                                 <p className='px-[1.3rem] sm:text-[1.5rem] font-semibold mb-[2rem] sm:mb-[3.5rem] text-Darkgrayishblue'>{info.content}</p>
                                 <div className='leading-[0.2rem] sm:leading-[0rem]'>
                                     <span className='font-extrabold tracking-wide font-FrauncesFont sm:text-[1.3rem] text-Verydarkdesaturatedblue'>LEARN MORE</span>
-                                    <hr className='opacity-30 rounded border-none h-[0.6rem] sm:h-[0.8rem] w-[8rem] sm:w-[10.5rem] bg-Yellow'/>
+                                    <hr className={`opacity-30 rounded border-none h-[0.6rem] sm:h-[0.8rem] w-[8rem] sm:w-[10.5rem] ${info.image ===mobileStandOut?'bg-Softred':'bg-Yellow'}`}/>
                                 </div>
                             </div>
                         </div>
