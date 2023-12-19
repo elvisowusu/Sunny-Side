@@ -14,8 +14,8 @@ function LearnMore() {
         <div>{
                 info.map((info,key)=>{
                     return(
-                        <div className='md:grid md:grid-cols-2 ' key={key}>
-                            <img src={screenWidth < 768 ? info.image:info.image2 } alt=""/>
+                        <div className='md:grid md:grid-cols-2' key={key}>
+                            <img src={screenWidth < 768 ? info.image:info.image2 } alt="" />
                             <div className='py-[4rem] sm:py-[6rem] md:py-[6rem] flex flex-col items-center md:items-start md:text-left md:px-[4rem]'>
                                 <h1 className='text-[2rem] sm:text-[2.5rem] md:text-[2rem] px-[3rem] md:px-0 leading-[2.4rem] font-extrabold font-FrauncesFont mb-[1.6rem] sm:mb-[3rem] md:mb-[2rem] text-Verydarkdesaturatedblue'>{info.topic}</h1>
                                 <p className='px-[1.3rem] md:px-0 sm:text-[1.5rem] md:text-[1.1rem] font-semibold mb-[2rem] sm:mb-[3.5rem] md:mb-[2rem] text-Darkgrayishblue'>{info.content}</p>
