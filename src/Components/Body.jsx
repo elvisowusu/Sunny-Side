@@ -1,13 +1,21 @@
 import mobileHeader from '../assets/mobile/image-header.jpg'
+import desktopHeader from '../assets/desktop/image-header.jpg'
 import arrowDown from '../assets/icon-arrow-down.svg'
 import Testimonials from './Testimonials'
 import Others from './Others'
 import LearnMore from './LearnMore';
 import Gallery from './Gallery';
 import { IoLogoFacebook, IoLogoInstagram, IoLogoPinterest, IoLogoTwitter } from "react-icons/io";
+import { useEffect, useState } from 'react'
 
 
 function Body() {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        const handleResize = () => setScreenWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     return (
         <div className="text-center font-BarlowFont">
@@ -15,7 +23,7 @@ function Body() {
                 <header className='text-White relative'>
                     <h1 className='absolute w-full top-[8rem] sm:top-[12rem] font-extrabold text-[3rem] sm:text-[6rem] leading-[3.4rem] sm:leading-[7rem] tracking-[0.5rem] font-FrauncesFont'>WE ARE CREATIVES</h1>
                     <img src={arrowDown} alt="" className='absolute top-[19rem] sm:top-[30.5rem] sm:w-[6rem] right-[10.7rem] sm:right-[20rem]'/>
-                    <img src={mobileHeader} alt="image" className='z-30'/>
+                    <img src={screenWidth < 768 ? mobileHeader : desktopHeader} alt="image" className='z-30'/>
                 </header>
                 <div>
                     <LearnMore/>
