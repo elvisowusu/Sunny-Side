@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+
+
+@layer components{
+    .NavItems{
+        @apply text-lg absolute  right-[1.367rem] top-[6.7rem] py-[2.3rem] md:py-0 md:static flex flex-col gap-[2rem] md:flex-row md:gap-[4rem] items-center bg-White w-[21.2rem] justify-center z-30;
+    }
+    .OtherList{
+        @apply text-Darkdesaturatedcyan(graphicdesigntext) font-bold;
+    }
+    .contact{
+        @apply rounded-[2rem] bg-Yellow px-[1.6rem] py-[1rem] font-extrabold text-Verydarkdesaturatedblue;
+    }
+    .footerText{
+        @apply hover:text-White cursor-pointer transition ease-in duration-200;
+    }
+}
