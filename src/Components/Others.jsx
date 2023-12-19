@@ -14,7 +14,7 @@ function Others() {
         {
             others.map((other,key)=>{
                 return(
-                    <div key={key} className='relative flex flex-col justify-center items-center'>
+                    <div key={key} className={`relative flex flex-col justify-center items-center ${other.topic==='Photography'? 'text-Darkblue(photographytext)':'text-Darkdesaturatedcyan(graphicdesigntext)'}`}>
                         <img src={other.image} alt="image" className='w-[100%] h-[100%]'/>
                         <div className={`absolute top-[22rem] sm:top-[42rem]`}>
                         <h1 className='font-extrabold text-[2rem] sm:text-[3.5rem] mt-[3.5rem] sm:mt-[4rem] mb-[1.5rem] sm:mb-[2rem] font-FrauncesFont'>{other.topic}</h1>
