@@ -10,7 +10,7 @@ import React,{ useEffect, useState } from 'react'
 //creat a context for the screen width
 //use the context to change the image src
 
-const ScreenWidthContext = React.createContext()
+export const ScreenWidthContext = React.createContext()
 
 function Body() {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
