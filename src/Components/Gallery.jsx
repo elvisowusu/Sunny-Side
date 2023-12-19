@@ -10,7 +10,7 @@ import desktopSugarCubes from '../assets/desktop/image-gallery-sugarcubes.jpg'
 function Gallery() {
     const mobileGallery = [mobileMilkBottles,mobileOrange,mobileCone,mobileSugarCubes]
     const desktopGallery = [desktopMilkBottles,desktopOrange,desktopCone,desktopSugarCubes]
-
+    
 
     return (
         <div className="grid grid-cols-2">

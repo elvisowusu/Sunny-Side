@@ -7,7 +7,8 @@ import LearnMore from './LearnMore';
 import Gallery from './Gallery';
 import { IoLogoFacebook, IoLogoInstagram, IoLogoPinterest, IoLogoTwitter } from "react-icons/io";
 import { useEffect, useState } from 'react'
-
+//creat a context for the screen width
+//use the context to change the image src
 
 function Body() {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
