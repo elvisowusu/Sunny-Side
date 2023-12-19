@@ -1,12 +1,14 @@
-import React from 'react'
+import Body from "./Components/Body"
+import NavBar from "./Components/NavBar"
 
 function App() {
-
+  
   return (
-    <div className='bg-red-300'>
-      Hello 
-    </div>
-  )
+      <div>
+        <NavBar/>
+        <Body/>
+      </div>
+      )
 }
 
 export default App
