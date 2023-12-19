@@ -14,14 +14,14 @@ function Testimonials() {
 
     return (
            <div className='text-center font-BarlowFont'>
-            <h1 className='font-extrabold font-FrauncesFont mt-[3.5rem] text-[1.3rem] tracking-[0.2rem] mb-[4rem]'>CLIENT TESTIMONIALS</h1>
+            <h1 className='font-extrabold font-FrauncesFont mt-[3.5rem] sm:mt-[4rem] text-[1.3rem] sm:text-[2rem] tracking-[0.2rem] sm:tracking-[0.4rem] mb-[4rem] sm:mb-[5rem]'>CLIENT TESTIMONIALS</h1>
             {
                 clients.map((client,key)=>
-                    <div key={key} className='flex flex-col justify-center items-center mb-[4.5rem]'>
-                            <img src={client.Image} alt="image" className='block rounded-full w-[4.6rem] mb-[2.5rem]'/>
-                            <p className='text-[1.1rem] font-semibold px-[1rem]'>{client.Statement}</p>
-                            <h3 className='mt-[1.5rem] font-extrabold font-FrauncesFont text-lg'>{client.Name}</h3>
-                            <p className='font-semibold text-sm mt-[0.6rem]'>{client.Ocuupation}</p>
+                    <div key={key} className='flex flex-col justify-center items-center mb-[4.5rem] sm:mb-[5rem]'>
+                            <img src={client.Image} alt="image" className='block rounded-full w-[4.6rem] sm:w-[6.5rem] mb-[2.5rem] sm:mb-[3.5rem]'/>
+                            <p className='text-[1.1rem] sm:text-[1.4rem] font-semibold px-[1rem] sm:px-[2rem]'>{client.Statement}</p>
+                            <h3 className='mt-[1.5rem] sm:mt-[2rem] font-extrabold font-FrauncesFont text-lg sm:text-[1.5rem]'>{client.Name}</h3>
+                            <p className='font-semibold text-sm sm:text-base mt-[0.6rem] sm:mt-[0.8rem]'>{client.Ocuupation}</p>
                     </div>
                 )
             }
