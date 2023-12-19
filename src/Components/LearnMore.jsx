@@ -1,18 +1,21 @@
+import { useContext } from 'react'
 import mobileTransform from '../assets/mobile/image-transform.jpg'
 import mobileStandOut from '../assets/mobile/image-stand-out.jpg'
-
+import desktopTransform from '../assets/desktop/image-transform.jpg'
+import desktopStandOut from '../assets/desktop/image-stand-out.jpg'
+import { ScreenWidthContext } from './Body'
 
 function LearnMore() {
-    const info =[{image:mobileTransform,alt:'transform image',topic:"Transform your brand",content:"We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you."},
-                {image:mobileStandOut, alt:'standout image',topic:"Stand out to the right audience",content:"Using a collaborative formula of designers, researcher, photographers, videographers, and copywriters, we'll build and extend your brand in digital places."}
-                ]
-
+    const info =[{image:mobileTransform,image2:desktopTransform,alt:'transform image',topic:"Transform your brand",content:"We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you."},
+                {image:mobileStandOut,image2:desktopStandOut, alt:'standout image',topic:"Stand out to the right audience",content:"Using a collaborative formula of designers, researcher, photographers, videographers, and copywriters, we'll build and extend your brand in digital places."}]
+        
+    const screenWidth = useContext(ScreenWidthContext)
     return (
         <div>{
                 info.map((info,key)=>{
                     return(
                         <div key={key}>
-                            <img src={info.image} alt="" />
+                            <img src={screenWidth < 768 ? info.image:info.image2 } alt="" />
                             <div className='py-[4rem] sm:py-[6rem] flex flex-col items-center'>
                                 <h1 className='text-[2rem] sm:text-[2.5rem] px-[3rem] leading-[2.4rem] font-extrabold font-FrauncesFont mb-[1.6rem] sm:mb-[3rem] text-Verydarkdesaturatedblue'>{info.topic}</h1>
                                 <p className='px-[1.3rem] sm:text-[1.5rem] font-semibold mb-[2rem] sm:mb-[3.5rem] text-Darkgrayishblue'>{info.content}</p>
