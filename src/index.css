@@ -7,6 +7,9 @@
 
 
 
+
+
+
 @layer components{
     .NavItems{
         @apply text-lg absolute  right-[1.367rem] top-[6.7rem] py-[2.3rem] md:py-0 md:static flex flex-col gap-[2rem] md:flex-row md:gap-[4rem] items-center bg-White w-[21.2rem] justify-center z-30;
