@@ -18,8 +18,8 @@ function Others() {
                     <div key={key} className={`relative flex flex-col justify-center items-center ${other.topic==='Photography'? 'text-Darkblue(photographytext)':'text-Darkdesaturatedcyan(graphicdesigntext)'}`}>
                         <img src={screenWidth < 768? other.image:other.image2} alt="image"/>
                         <div className={`absolute top-[22rem] sm:top-[42rem]`}>
-                        <h1 className='font-extrabold text-[2rem] sm:text-[3.5rem] mt-[3.5rem] sm:mt-[4rem] mb-[1.5rem] sm:mb-[2rem] font-FrauncesFont'>{other.topic}</h1>
-                        <p className='px-[1.3rem] text-[0.9rem] sm:text-[1.4rem] font-semibold font-BarlowFont'>{other.content}</p>
+                            <h1 className='font-extrabold text-[2rem] sm:text-[3.5rem] mt-[3.5rem] sm:mt-[4rem] mb-[1.5rem] sm:mb-[2rem] font-FrauncesFont'>{other.topic}</h1>
+                            <p className='px-[1.3rem] text-[0.9rem] sm:text-[1.4rem] font-semibold font-BarlowFont'>{other.content}</p>
                         </div>
                     </div>
                 )
