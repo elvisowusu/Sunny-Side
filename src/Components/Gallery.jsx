@@ -7,7 +7,7 @@ import desktopMilkBottles from '../assets/desktop/image-gallery-milkbottles.jpg'
 import desktopOrange from '../assets/desktop/image-gallery-orange.jpg'
 import desktopSugarCubes from '../assets/desktop/image-gallery-sugarcubes.jpg'
 import { ScreenWidthContext } from './Body'
-import React,{ useContext } from 'react'
+import { useContext } from 'react'
 
 
 function Gallery() {
