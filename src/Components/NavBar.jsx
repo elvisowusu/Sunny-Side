@@ -1,7 +1,7 @@
 import { useEffect,useReducer } from "react";
-import Mylogo from "../Assets/logo.svg";
+import Mylogo from "../assets/logo.svg";
 import { NavItems } from "./NavItems";
-import Menu from "../Assets/icon-hamburger.svg";
+import Menu from "../assets/icon-hamburger.svg";
 
 const reducer = (state, action) => {
     switch (action.type) {
