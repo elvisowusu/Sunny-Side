@@ -34,8 +34,8 @@ function Body() {
                         <Others/>
                     </ScreenWidthContext.Provider>
                 </div>
-                <ScreenWidthContext.Provider value={screenWidth}>
                     <Testimonials/>
+                <ScreenWidthContext.Provider value={screenWidth}>
                     <Gallery/>
                 </ScreenWidthContext.Provider>
             </main>
