@@ -9,7 +9,7 @@
 
 @layer components{
     .NavItems{
-        @apply text-lg absolute  right-[1.367rem] top-[6.7rem] py-[2.3rem] md:py-0 md:static flex flex-col gap-[2rem] md:flex-row md:gap-[4rem] items-center bg-White w-[21.2rem] justify-center z-30;
+        @apply text-lg sm:text-[1.6rem] absolute  right-[1.367rem] top-[6.7rem] sm:top-[8.5rem] py-[2.3rem] sm:py-[5rem] md:py-0 md:static flex flex-col gap-[2rem] sm:gap-[3rem] md:flex-row md:gap-[4rem] items-center bg-White w-[21.2rem] sm:w-[43rem] justify-center z-30;
     }
     .OtherList{
         @apply text-Darkdesaturatedcyan(graphicdesigntext) font-bold;
