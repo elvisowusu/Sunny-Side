@@ -16,7 +16,7 @@ function Gallery() {
 
     const screenWidth = useContext(ScreenWidthContext)
     return (
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 md:grid-cols-4">
             { screenWidth < 768 ?
                 mobileGallery.map((gallery,key)=><img key={key} src={gallery}/>):
                 desktopGallery.map((gallery,key)=><img key={key} src={gallery}/>)

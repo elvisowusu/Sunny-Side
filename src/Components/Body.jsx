@@ -22,8 +22,8 @@ function Body() {
         <div className="text-center font-BarlowFont">
             <main>
                 <header className='text-White relative'>
-                    <h1 className='absolute w-full top-[8rem] sm:top-[12rem] font-extrabold text-[3rem] sm:text-[6rem] leading-[3.4rem] sm:leading-[7rem] tracking-[0.5rem] font-FrauncesFont'>WE ARE CREATIVES</h1>
-                    <img src={arrowDown} alt="" className='absolute top-[19rem] sm:top-[30.5rem] sm:w-[6rem] right-[10.7rem] sm:right-[20rem]'/>
+                    <h1 className='absolute w-full top-[8rem] sm:top-[12rem] md:top-[8rem] font-extrabold text-[3rem] sm:text-[6rem] md:text-[2.3rem] leading-[3.4rem] sm:leading-[7rem] tracking-[0.5rem] md:tracking-[0.3rem] font-FrauncesFont'>WE ARE CREATIVES</h1>
+                    <img src={arrowDown} alt="" className='absolute top-[19rem] sm:top-[30.5rem] md:top-[15rem] sm:w-[6rem] md:w-[2rem] right-[10.7rem] sm:right-[20rem] md:right-[30rem]'/>
                     <img src={screenWidth < 768 ? mobileHeader : desktopHeader} alt="image" className='z-30'/>
                 </header>
                 <div>
