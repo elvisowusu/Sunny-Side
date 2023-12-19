@@ -13,8 +13,8 @@ function Body() {
         <div className="text-center font-BarlowFont">
             <main>
                 <header className='text-White relative'>
-                    <h1 className='absolute w-full top-[8rem] font-extrabold text-[3rem] leading-[3.4rem] tracking-[0.5rem] font-FrauncesFont'>WE ARE CREATIVES</h1>
-                    <img src={arrowDown} alt="" className='absolute top-[19rem] right-[10.7rem]'/>
+                    <h1 className='absolute w-full top-[8rem] sm:top-[12rem] font-extrabold text-[3rem] sm:text-[6rem] leading-[3.4rem] sm:leading-[7rem] tracking-[0.5rem] font-FrauncesFont'>WE ARE CREATIVES</h1>
+                    <img src={arrowDown} alt="" className='absolute top-[19rem] sm:top-[30.5rem] sm:w-[6rem] right-[10.7rem] sm:right-[20rem]'/>
                     <img src={mobileHeader} alt="image" className='z-30'/>
                 </header>
                 <div>
@@ -25,13 +25,13 @@ function Body() {
                 <Gallery/>
             </main>
             <footer className='flex flex-col items-center bg-Darkmoderatecyan(footer) text-Darkdesaturatedcyan(graphicdesigntext) py-[4rem]'>
-                <h1 className='font-extrabold text-[2rem] mb-[2rem]'>sunnyside</h1>
-                <ul className='flex gap-[4rem] font-semibold text-[1.1rem] mb-[4rem]'>
+                <h1 className='font-extrabold text-[2rem] sm:text-[3rem] mb-[2rem]'>sunnyside</h1>
+                <ul className='flex gap-[4rem] sm:gap-[6rem] font-semibold text-[1.1rem] sm:text-[1.3rem] mb-[4rem]'>
                     <li className='footerText'>About</li>
                     <li className='footerText'>Services</li>
                     <li className='footerText'>Projects</li>
                 </ul>
-                <section className='flex gap-[1.7rem] text-[1.6rem]'>
+                <section className='flex gap-[1.7rem] sm:gap-[2rem] text-[1.6rem] sm:text-[2rem]'>
                     <a href="https://www.facebook.com"><IoLogoFacebook className='footerText'/></a>
                     <a href="https://www.instagram.com"><IoLogoInstagram className='footerText'/></a>
                     <a href="https://www.twitter.com"><IoLogoTwitter className='footerText'/></a>
