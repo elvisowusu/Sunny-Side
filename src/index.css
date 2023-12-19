@@ -12,10 +12,10 @@
         @apply text-lg sm:text-[1.6rem] md:text-[0.8rem] absolute  right-[1.367rem] top-[6.7rem] sm:top-[8.5rem] md:top-[1.5rem] py-[2.3rem] sm:py-[5rem] md:py-0 md:static flex flex-col gap-[2rem] sm:gap-[3rem] md:flex-row md:gap-[2.5rem] items-center  bg-White md:bg-transparent w-[21.2rem] sm:w-[43rem] justify-center md:justify-end z-30;
     }
     .OtherList{
-        @apply font-BarlowFont text-Darkgrayishblue md:text-gray-100 md:hover:text-White cursor-pointer font-bold;
+        @apply font-BarlowFont text-Darkgrayishblue md:text-gray-100 md:hover:text-White transition ease-in duration-200 cursor-pointer font-bold;
     }
     .contact{
-        @apply font-FrauncesFont  rounded-[2rem] bg-Yellow md:bg-White px-[1.6rem] py-[1rem] md:py-[0.5rem] font-extrabold text-Verydarkdesaturatedblue;
+        @apply font-FrauncesFont  rounded-[2rem] bg-Yellow md:bg-White md:hover:text-white md:hover:bg-opacity-20 transition ease-in duration-200 cursor-pointer px-[1.6rem] py-[1rem] md:py-[0.6rem] font-extrabold text-Verydarkdesaturatedblue;
     }
     .footerText{
         @apply hover:text-White cursor-pointer transition ease-in duration-200;
