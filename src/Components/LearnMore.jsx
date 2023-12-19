@@ -14,11 +14,11 @@ function LearnMore() {
                         <div key={key}>
                             <img src={info.image} alt="" />
                             <div className='py-[4rem] sm:py-[6rem] flex flex-col items-center'>
-                                <h1 className='text-[2rem] sm:text-[2.5rem] px-[3rem] leading-[2.4rem] font-extrabold font-FrauncesFont mb-[1.6rem] sm:mb-[3rem]'>{info.topic}</h1>
-                                <p className='px-[1.3rem] sm:text-[1.5rem] font-semibold mb-[2rem] sm:mb-[3.5rem]'>{info.content}</p>
+                                <h1 className='text-[2rem] sm:text-[2.5rem] px-[3rem] leading-[2.4rem] font-extrabold font-FrauncesFont mb-[1.6rem] sm:mb-[3rem] text-Verydarkdesaturatedblue'>{info.topic}</h1>
+                                <p className='px-[1.3rem] sm:text-[1.5rem] font-semibold mb-[2rem] sm:mb-[3.5rem] text-Darkgrayishblue'>{info.content}</p>
                                 <div className='leading-[0.2rem] sm:leading-[0rem]'>
-                                    <span className='font-extrabold tracking-wide font-FrauncesFont sm:text-[1.3rem]'>LEARN MORE</span>
-                                    <hr className='opacity-40 rounded border-none h-[0.6rem] sm:h-[0.8rem] w-[8rem] sm:w-[10.5rem] bg-Yellow'/>
+                                    <span className='font-extrabold tracking-wide font-FrauncesFont sm:text-[1.3rem] text-Verydarkdesaturatedblue'>LEARN MORE</span>
+                                    <hr className='opacity-30 rounded border-none h-[0.6rem] sm:h-[0.8rem] w-[8rem] sm:w-[10.5rem] bg-Yellow'/>
                                 </div>
                             </div>
                         </div>
