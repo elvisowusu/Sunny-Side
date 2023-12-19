@@ -33,12 +33,12 @@ function NavBar() {
     return (
         <div className={`fixed w-full flex items-center justify-between pt-[2rem] px-[1.5rem] sm:bg-green-400 md:bg-red-400 lg:bg-pink-400 z-30`}>
           <div>
-            <img src={Mylogo} alt="logo" className="sm:w-[12rem]"/>
+            <img src={Mylogo} alt="logo" className="sm:w-[12rem] md:w-[13rem]"/>
           </div>
           <div>
             {state.screenWidth > 768 ? 
                 <NavItems /> : 
-                <button onClick={()=>dispatch({type: "SET_CLICKED", payload: !state.clicked})} className={`text-white`}> <img className="sm:w-[2rem]" src={Menu} alt="" /> </button>
+                <button onClick={()=>dispatch({type: "SET_CLICKED", payload: !state.clicked})} className={`text-white`}> <img className="sm:w-[2rem]" src={Menu} alt="" /></button>
             }
           </div>
             {state.clicked?
