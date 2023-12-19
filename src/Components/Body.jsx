@@ -6,9 +6,11 @@ import Others from './Others'
 import LearnMore from './LearnMore';
 import Gallery from './Gallery';
 import { IoLogoFacebook, IoLogoInstagram, IoLogoPinterest, IoLogoTwitter } from "react-icons/io";
-import { useEffect, useState } from 'react'
+import React,{ useEffect, useState } from 'react'
 //creat a context for the screen width
 //use the context to change the image src
+
+const ScreenWidthContext = React.createContext()
 
 function Body() {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -27,11 +29,15 @@ function Body() {
                     <img src={screenWidth < 768 ? mobileHeader : desktopHeader} alt="image" className='z-30'/>
                 </header>
                 <div>
-                    <LearnMore/>
-                    <Others/>
+                    <ScreenWidthContext.Provider value={screenWidth}>
+                        <LearnMore/>
+                        <Others/>
+                    </ScreenWidthContext.Provider>
                 </div>
-                <Testimonials/>
-                <Gallery/>
+                <ScreenWidthContext.Provider value={screenWidth}>
+                    <Testimonials/>
+                    <Gallery/>
+                </ScreenWidthContext.Provider>
             </main>
             <footer className='flex flex-col items-center bg-Darkmoderatecyan(footer) text-Darkdesaturatedcyan(graphicdesigntext) py-[4rem]'>
                 <h1 className='font-extrabold text-[2rem] sm:text-[3rem] mb-[2rem]'>sunnyside</h1>
