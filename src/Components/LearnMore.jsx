@@ -27,7 +27,7 @@ function LearnMore() {
                         </div>
                     )
                 })
-             }
+            }
             
         </div>
     );

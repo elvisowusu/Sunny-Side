@@ -19,7 +19,7 @@ function Testimonials() {
                 clients.map((client,key)=>
                     <div key={key} className='flex flex-col justify-center items-center mb-[4.5rem] sm:mb-[5rem]'>
                             <img src={client.Image} alt="image" className='block rounded-full w-[4.6rem] sm:w-[6.5rem] mb-[2.5rem] sm:mb-[3.5rem]'/>
-                            <p className='text-[1.1rem] sm:text-[1.4rem] font-semibold px-[1rem] sm:px-[2rem] text-Verydarkgrayishblue'>{client.Statement}</p>
+                            <p className='text-[1.1rem] sm:text-[1.4rem] font-semibold px-[1rem] sm:px-[2rem] text-Verydarkgrayishblue md:w-[31rem]'>{client.Statement}</p>
                             <h3 className='mt-[1.5rem] sm:mt-[2rem] font-extrabold font-FrauncesFont text-lg sm:text-[1.5rem] text-Verydarkdesaturatedblue'>{client.Name}</h3>
                             <p className='font-semibold text-sm sm:text-[1.3rem] mt-[0.6rem] sm:mt-[1rem] text-Grayishblue'>{client.Ocuupation}</p>
                     </div>

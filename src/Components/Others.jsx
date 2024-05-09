@@ -11,15 +11,15 @@ function Others() {
                     {topic:'Photography',content:"Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",image:mobilePhotography,image2:desktopPhotography}]
     const screenWidth = useContext(ScreenWidthContext)
     return (
-        <div className='relative'>
+        <div className='relative md:grid md:grid-cols-2'>
         {
             others.map((other,key)=>{
                 return(
                     <div key={key} className={`relative flex flex-col justify-center items-center ${other.topic==='Photography'? 'text-Darkblue(photographytext)':'text-Darkdesaturatedcyan(graphicdesigntext)'}`}>
-                        <img src={screenWidth < 768? other.image:other.image2} alt="image" className='md:w-full'/>
-                        <div className={`absolute top-[22rem] sm:top-[42rem] md:top-[32rem]`}>
-                            <h1 className='font-extrabold text-[2rem] sm:text-[3.5rem] mt-[3.5rem] sm:mt-[4rem] mb-[1.5rem] sm:mb-[2rem] font-FrauncesFont'>{other.topic}</h1>
-                            <p className='px-[1.3rem] text-[0.9rem] sm:text-[1.4rem] font-semibold font-BarlowFont'>{other.content}</p>
+                        <img src={screenWidth < 768? other.image:other.image2} alt="image"/>
+                        <div className={`absolute top-[22rem] sm:top-[42rem] md:top-[10rem] md:w-[26rem]`}>
+                            <h1 className='font-extrabold text-[2rem] sm:text-[3.5rem] md:text-[1.5rem] mt-[3.5rem] sm:mt-[4rem] mb-[1.5rem] sm:mb-[2rem] font-FrauncesFont'>{other.topic}</h1>
+                            <p className='px-[1.3rem] text-[0.9rem] sm:text-[1.4rem] md:text-[1.1rem] font-semibold font-BarlowFont'>{other.content}</p>
                         </div>
                     </div>
                 )
